@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📈 STOCK TRACK [AI-Powered Stock Market App]
 
-## Getting Started
+✨ **AI-powered modern stock market app** built with **Next.js**, **Shadcn**, **Better Auth**, and **Inngest**!
 
-First, run the development server:
+Stay ahead in the market with **real-time tracking**, **personalized alerts**, and **AI-driven insights** — all within a beautiful, modern UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 💹 User Dashboard
+- 📊 Track **real-time stock prices**  
+- 🔔 Set **personalized alerts** for target prices  
+- 🧠 Explore **AI-powered company insights**  
+- ⭐ Manage your **watchlists** seamlessly  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🛠️ Admin Dashboard
+- 🧾 Manage **stocks and company data**  
+- 📰 Publish **market news and updates**  
+- 👥 Monitor **user activity and engagement**  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Event-Driven Workflows (Powered by Inngest)
+- ⚙️ **Automated alerts** for stock movements  
+- 🧭 **AI-driven daily digests** with key insights  
+- 💵 **Earnings notifications** and updates  
+- 💬 **Sentiment analysis** from market trends  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧑‍💻 Tech Stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Layer | Technology |
+|-------|-------------|
+| Frontend | [Next.js](https://nextjs.org/), [Shadcn UI](https://ui.shadcn.com/) |
+| Authentication | [Better Auth](https://better-auth.com/) |
+| Event Processing | [Inngest](https://www.inngest.com/) |
+| AI & Automation | Custom AI workflows for insights & notifications |
