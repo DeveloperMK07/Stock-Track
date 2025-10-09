@@ -2,7 +2,7 @@
 
 ✨ **AI-powered modern stock market app** built with **Next.js**, **Shadcn**, **Better Auth**, and **Inngest**!
 
-Stay ahead in the market with **real-time tracking**, **personalized alerts**, and **AI-driven insights** — all within a beautiful, modern UI.
+Stay ahead in the market with **real-time tracking**, **personalized alerts**, and **AI-driven insights** — all within a beautiful, modern UI all with Signalist Application.
 
 ---
 
