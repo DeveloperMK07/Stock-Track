@@ -13,6 +13,14 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 
+/**
+ * Styled wrapper around CmdK's CommandPrimitive that applies default layout and appearance while forwarding props.
+ *
+ * Renders a CommandPrimitive with a predefined base className and `data-slot="command"`, merging any provided
+ * `className` and spreading remaining props onto the primitive.
+ *
+ * @returns The rendered CommandPrimitive element with merged `className` and forwarded props.
+ */
 function Command({
   className,
   ...props
@@ -29,6 +37,17 @@ function Command({
   )
 }
 
+/**
+ * Render a Dialog-backed command palette that wraps the Command component with accessible title and description slots.
+ *
+ * Renders a Dialog containing a visually hidden header (DialogTitle and DialogDescription) and DialogContent that hosts the Command palette. The DialogContent forwards showCloseButton and accepts additional Dialog props.
+ *
+ * @param title - Visible label for the command palette used in the hidden header
+ * @param description - Descriptive text for the command palette used in the hidden header
+ * @param className - Additional class names to apply to the DialogContent container
+ * @param showCloseButton - Whether the DialogContent should render a close button; defaults to `true`
+ * @returns The Dialog element containing the composed Command palette UI
+ */
 function CommandDialog({
   title = "Command Palette",
   description = "Search for a command to run...",
@@ -60,6 +79,16 @@ function CommandDialog({
   )
 }
 
+/**
+ * Renders the command palette's search input with a leading search icon.
+ *
+ * Forwards all received props to the underlying CmdK `CommandPrimitive.Input` and composes
+ * the provided `className` with the component's base input styles.
+ *
+ * @param className - Additional CSS classes appended to the input element's base classes
+ * @param props - Props forwarded to the underlying `CommandPrimitive.Input`
+ * @returns The rendered input wrapper element containing the search icon and the CmdK input
+ */
 function CommandInput({
   className,
   ...props
@@ -82,6 +111,14 @@ function CommandInput({
   )
 }
 
+/**
+ * Renders the list portion of the command palette.
+ *
+ * The element has a max height and vertical scrolling enabled, applies any
+ * provided `className`, and receives `data-slot="command-list"`.
+ *
+ * @returns The React element for the command list with max height, vertical scrolling, and a composed `className`; remaining props are forwarded.
+ */
 function CommandList({
   className,
   ...props
@@ -98,6 +135,11 @@ function CommandList({
   )
 }
 
+/**
+ * Renders the empty-state view shown when the command list has no results.
+ *
+ * @returns A `CommandPrimitive.Empty` element with default vertical padding and centered small text.
+ */
 function CommandEmpty({
   ...props
 }: React.ComponentProps<typeof CommandPrimitive.Empty>) {
@@ -110,6 +152,11 @@ function CommandEmpty({
   )
 }
 
+/**
+ * Renders a styled command group section used to group related command items.
+ *
+ * @returns A React element representing the command group with `data-slot="command-group"` and composed styling.
+ */
 function CommandGroup({
   className,
   ...props
@@ -126,6 +173,12 @@ function CommandGroup({
   )
 }
 
+/**
+ * Render a styled separator used between command groups or items in the command palette.
+ *
+ * @param className - Additional CSS class names appended to the component's base styles
+ * @returns The separator element for the command palette
+ */
 function CommandSeparator({
   className,
   ...props
@@ -139,6 +192,14 @@ function CommandSeparator({
   )
 }
 
+/**
+ * Renders a styled command palette item for use inside the Command list.
+ *
+ * The component outputs a CommandPrimitive.Item element with a `data-slot="command-item"` attribute and a composed className for selected, disabled, and icon styling. Additional props are forwarded to the underlying primitive.
+ *
+ * @param className - Optional additional CSS classes to merge with the component's base styles.
+ * @returns A React element representing a single command palette item.
+ */
 function CommandItem({
   className,
   ...props
@@ -155,6 +216,11 @@ function CommandItem({
   )
 }
 
+/**
+ * Renders a shortcut badge aligned to the end of a command item.
+ *
+ * @returns The span element containing shortcut text, styled and aligned to the end of the command item.
+ */
 function CommandShortcut({
   className,
   ...props
